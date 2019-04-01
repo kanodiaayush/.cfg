@@ -115,20 +115,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-# added by Anaconda3 5.3.0 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/piedpiper/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/piedpiper/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/piedpiper/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/piedpiper/anaconda3/bin:$PATH"
+
+alias tmux='tmux -2'
+
+if [ $TERM == "xterm" ] ; then
+    if [ -n $COLORTERM ] ; then
+	if [ $COLORTERM = "gnome-terminal" -o $COLORTERM = "xfce-terminal" ] ; then
+	    TERM=xterm-256color
+	fi
+    elif [ -n "$VTE_VERSION" ] ; then
+	TERM=xterm-256color
     fi
 fi
-unset __conda_setup
-# <<< conda init <<<
-alias config='/usr/bin/git --git-dir=/home/piedpiper/.cfg/ --work-tree=/home/piedpiper'

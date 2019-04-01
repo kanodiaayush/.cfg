@@ -9,20 +9,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,7 +29,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 " plugins
-filetype plugin indent on
 
 syntax on
 
@@ -66,34 +55,26 @@ set autoindent
 " Setting mapleader
 let mapleader="\\"
 
-" Setting F3 to toggle comments using Nerd Commentor
-map <F3> \c<space>
-
 " Setting a default colour scheme; colorscheme default reverts to the default
 " color scheme
-colorscheme apprentice
+"set t_Co=256
+set background=dark
+"colorscheme apprentice
+"let g:hybrid_custom_term_colors = 1
+"let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
+"colorscheme hybrid
+"colorscheme jellybeans
 
-" To change the shape of the cursor in different modes
-if has("autocmd")
-  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-  au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-endif
 
 " Open split screens to the right and below
 set splitright
 set splitbelow
 
 " Vertical line after 80 characters
-set colorcolumn=+1
+"set colorcolumn=+1
 
 " Use space for tabs
-set softtabstop=4 shiftwidth=4 tabstop=4 expandtab
+autocmd Filetype python setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
-" F3 to toggle comments
-  map <F3> <plug>NERDCommenterToggle<CR>
-  imap <F3> <Esc><plug>NERDCommenterToggle<CR>i 
-
-" Ctrl + F to Format
-map <C-F> :py3f /usr/share/vim/addons/syntax/clang-format-3.8.py<CR>
-imap <C-F> <Esc>:py3f /usr/share/vim/addons/syntax/clang-format-3.8.py<CR>i
+" Setting F3 to toggle comments using Nerd Commentor
+map <F3> \c<space>

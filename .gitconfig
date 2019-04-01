@@ -1,0 +1,13 @@
+[user]
+	name = Ayush Kanodia
+	email = kanodiaayush@gmail.com
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
