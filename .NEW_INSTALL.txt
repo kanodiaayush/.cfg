@@ -10,6 +10,10 @@ Packages:
 7. Install the ruby gem which helps you with multi touch gestures.
 8. Add SSH keys to github/bitbucket.
 9. Setup Terminal Preferences -- get the correct fonts and colours.
+	Font: Monospace Regular / Monaco
+	BG color: #262626
+	Set Unlimited Scrolling
+	Font Size: 10
 10. Install Anaconda
 11. Setup Grive(2)
 12. Fonts will be copied in ~/.fonts (specifically monaco). To load this, use 'sudo fc-cache -fv'
