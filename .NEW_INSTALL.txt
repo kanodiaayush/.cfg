@@ -5,10 +5,16 @@ Packages:
 2. Git
 3. My dotfiles in kanodiaayush/.cfg on github
 4. Install Chrome (this is number one really)
-5. Install Variety
-6. Install Materia theme with Papirus Icons
-7. Modify the top and bottom bars to autohide (and uncheck all else)
-8. Install the ruby gem which helps you with multi touch gestures.
-9. Add SSH keys to github/bitbucket.
-10. Setup Terminal Preferences -- get the correct fonts and colours.
-11. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
+5. Install Materia theme with Papirus Icons
+6. Modify the top and bottom bars to autohide and show hide buttons (check the last three options)
+7. Install the ruby gem which helps you with multi touch gestures.
+8. Add SSH keys to github/bitbucket.
+9. Setup Terminal Preferences -- get the correct fonts and colours.
+10. Install Anaconda
+11. Setup Grive(2)
+
+
+Optional/System Specific:
+1. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
+2. Install a Wallpaper Manager. Use Variety/Wallpaper Downloader: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader. The former sometimes just does not work.
+
