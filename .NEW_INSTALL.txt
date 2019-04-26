@@ -1,0 +1,11 @@
+On a new install, this is the stuff that I typically do:
+
+Packages:
+1. Vim
+2. Git
+3. My dotfiles in kanodiaayush/.cfg on github
+4. Install Chrome (this is number one really)
+5. Install Variety
+6. Install Materia theme with Papirus Icons
+7. Modify the top and bottom bars to autohide (and uncheck all else)
+8. Install the ruby gem which helps you with multi touch gestures.
