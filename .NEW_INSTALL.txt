@@ -12,6 +12,8 @@ Packages:
 9. Setup Terminal Preferences -- get the correct fonts and colours.
 10. Install Anaconda
 11. Setup Grive(2)
+12. Fonts will be copied in ~/.fonts (specifically monaco). To load this, use 'sudo fc-cache -fv'
+
 
 
 Optional/System Specific:
