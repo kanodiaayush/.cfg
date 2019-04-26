@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
