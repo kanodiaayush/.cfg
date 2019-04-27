@@ -17,13 +17,7 @@ Packages:
 10. Install Anaconda
 11. Setup Grive(2)
 12. Fonts will be copied in ~/.fonts (specifically monaco). To load this, use 'sudo fc-cache -fv'
-13. Install Fusuma: https://github.com/iberianpig/fusuma | Pre requisite -- Ruby 'sudo apt install ruby-full'. The fusuma config file lies in .cfg. Make it run on startup by creating /etc/rc.local with the contents as
-
-#!/bin/sh -e
-
-sleep 1
-fusuma
-exit 0
+13. Install Fusuma: https://github.com/iberianpig/fusuma | Pre requisite -- Ruby 'sudo apt install ruby-full'. The fusuma config file lies in .cfg.
 
 
 
