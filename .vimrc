@@ -79,3 +79,10 @@ autocmd Filetype python setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
 " Setting F3 to toggle comments using Nerd Commentor
 map <F3> \c<space>
+
+" Disable arrow keys in vim to force habit of using hjkl; Arrow keys should
+" ideally be remapped to something later.
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>

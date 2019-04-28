@@ -24,5 +24,5 @@ Packages:
 
 Optional/System Specific:
 1. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
-2. Install a Wallpaper Manager. Use Variety/Wallpaper Downloader: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader. The former sometimes just does not work.
+2. Install a Wallpaper Manager. Use Variety/Wallpaper Downloader: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader. The former sometimes just does not work. Enable Wallpaper Downloader as a startup application in gnome-session-properties with the command 'wallpaperdownloader'
 
