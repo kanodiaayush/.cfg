@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
+Plugin 'nanotech/jellybeans.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -34,6 +35,8 @@ filetype plugin indent on    " required
 syntax on
 
 " Set the status bar to show the line number and column number
+set laststatus=2
+set statusline+=%F
 set number
 set ruler
 
@@ -53,17 +56,14 @@ nmap <silent> <S-Right> :wincmd l<CR>
 " Auto indent
 set autoindent
 
-" Setting mapleader
-let mapleader="\\"
-
 " Setting a default colour scheme; colorscheme default reverts to the default
 " color scheme
-"set t_Co=256
+set t_Co=256
 set background=dark
 "colorscheme apprentice
 "let g:hybrid_custom_term_colors = 1
 "let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-"colorscheme hybrid
+colorscheme hybrid
 "colorscheme jellybeans
 
 
@@ -86,3 +86,9 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+if !exists('g:lasttab')
+	  let g:lasttab = 1
+  endif
+  nmap 0gt :exe "tabn ".g:lasttab<CR>
+  au TabLeave * let g:lasttab = tabpagenr()
