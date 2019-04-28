@@ -18,6 +18,7 @@ Packages:
 11. Setup Grive(2)
 12. Fonts will be copied in ~/.fonts (specifically monaco). To load this, use 'sudo fc-cache -fv'
 13. Install Fusuma: https://github.com/iberianpig/fusuma | Pre requisite -- Ruby 'sudo apt install ruby-full'. The fusuma config file lies in .cfg.
+14. Get Compiz. Add compiz --replace to startup applications. Go to CCSM from dashboard and enable the put extension. Set shortcut to move windows between monitors.
 
 
 
