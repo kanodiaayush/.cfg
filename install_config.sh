@@ -1,5 +1,4 @@
-# Save this script as install.sh and run it on a new machine. Do not save it as install_config.sh as that will lead to a conflict. Once installed, delete it. Or, just wget it from git hub and pipe the output to /bin/bash instead of actually saving it (curl -Llks <github raw URL> | /bin/bash)
-# Saves existing dotfiles to .config-backup
+# Run commands from this script in terminal. Do not execute as script as the stuff created thereafter seems to not have write permissions for whatever reason.
 
 git clone --bare  https://github.com/kanodiaayush/.cfg.git $HOME/.cfg
 
