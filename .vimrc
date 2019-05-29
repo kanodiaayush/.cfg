@@ -58,6 +58,8 @@ set autoindent
 
 " Setting a default colour scheme; colorscheme default reverts to the default
 " color scheme
+set term=screen-256color
+"set t_Co=256
 set background=dark
 "colorscheme apprentice
 "let g:hybrid_custom_term_colors = 1

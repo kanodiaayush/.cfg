@@ -122,12 +122,3 @@ fi
 
 alias tmux='tmux -2'
 
-if [ $TERM == "xterm" ] ; then
-    if [ -n $COLORTERM ] ; then
-	if [ $COLORTERM = "gnome-terminal" -o $COLORTERM = "xfce-terminal" ] ; then
-	    TERM=xterm-256color
-	fi
-    elif [ -n "$VTE_VERSION" ] ; then
-	TERM=xterm-256color
-    fi
-fi
