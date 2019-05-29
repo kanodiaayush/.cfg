@@ -92,3 +92,9 @@ if !exists('g:lasttab')
   endif
   nmap 0gt :exe "tabn ".g:lasttab<CR>
   au TabLeave * let g:lasttab = tabpagenr()
+
+" Set textwidth for markdown files
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" A color column at textwidth
+set colorcolumn=+1
