@@ -105,6 +105,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -118,12 +122,3 @@ fi
 
 alias tmux='tmux -2'
 
-if [ $TERM == "xterm" ] ; then
-    if [ -n $COLORTERM ] ; then
-	if [ $COLORTERM = "gnome-terminal" -o $COLORTERM = "xfce-terminal" ] ; then
-	    TERM=xterm-256color
-	fi
-    elif [ -n "$VTE_VERSION" ] ; then
-	TERM=xterm-256color
-    fi
-fi

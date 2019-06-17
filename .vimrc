@@ -58,7 +58,8 @@ set autoindent
 
 " Setting a default colour scheme; colorscheme default reverts to the default
 " color scheme
-set t_Co=256
+set term=screen-256color
+"set t_Co=256
 set background=dark
 "colorscheme apprentice
 "let g:hybrid_custom_term_colors = 1
@@ -92,3 +93,10 @@ if !exists('g:lasttab')
   endif
   nmap 0gt :exe "tabn ".g:lasttab<CR>
   au TabLeave * let g:lasttab = tabpagenr()
+
+" Set textwidth for markdown files
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" A color column at textwidth
+set colorcolumn=+1
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
