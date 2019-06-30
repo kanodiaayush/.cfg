@@ -100,3 +100,6 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " A color column at textwidth
 set colorcolumn=+1
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
+
+" Undo Search Highlighting on the enter key
+nnoremap <CR> :noh<CR><CR>
