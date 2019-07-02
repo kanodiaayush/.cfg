@@ -103,3 +103,6 @@ au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdo
 
 " Undo Search Highlighting on the enter key
 nnoremap <CR> :noh<CR><CR>
+
+" Shift Enter to enter a line below current position and return to normal mode
+nmap <C-I> o<Esc>
