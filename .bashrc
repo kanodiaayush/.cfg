@@ -138,3 +138,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Set DISPLAY variable to work with tmux
+export DISPLAY="`tmux show-env | sed -n 's/^DISPLAY=//p'`"
