@@ -7,7 +7,7 @@ Packages:
 4. Install Chrome (this is number one really)
 5. Install Materia theme with Papirus Icons
 6. Modify the top and bottom bars to autohide and show hide buttons (check the last three options)
-7. Install the ruby gem which helps you with multi touch gestures.
+7. Install the ruby gem which helps you with multi touch gestures. See #13
 8. Add SSH keys to github/bitbucket.
 9. Setup Terminal Preferences -- get the correct fonts and colours.
 	Font: Monospace Regular / Monaco
