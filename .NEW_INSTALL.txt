@@ -7,7 +7,7 @@ Packages:
 4. Install Chrome (this is number one really)
 5. Install Materia theme with Papirus Icons
 6. Modify the top and bottom bars to autohide and show hide buttons (check the last three options)
-7. Install the ruby gem which helps you with multi touch gestures. See #13
+7. Install the ruby gem which helps you with multi touch gestures. See # 13
 8. Add SSH keys to github/bitbucket.
 9. Setup Terminal Preferences -- get the correct fonts and colours.
 	Font: Monospace Regular / Monaco
@@ -23,6 +23,8 @@ Packages:
 16. Use Compiz to dim non active windows with a shortcut-- https://askubuntu.com/questions/828557/highlight-window-with-focus-even-more
 17. Use Compiz to remove the title bar from windows when they are fullscreen -- https://askubuntu.com/questions/284956/dim-inactive-compiz-set-speed-of-the-effect
 18. Use Compiz to speed up window transitions with dimming of non active windows -- https://askubuntu.com/questions/284956/dim-inactive-compiz-set-speed-of-the-effect
+19. Use Compiz to allow using keyboard shortcuts to move windows between monitors -- Compiz -> window management -> Put
+20. Install Vundle -- 
 
 Optional/System Specific:
 1. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
