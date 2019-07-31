@@ -13,6 +13,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
