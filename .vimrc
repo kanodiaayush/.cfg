@@ -108,3 +108,14 @@ nnoremap <CR> :noh<CR><CR>
 
 " Shift Enter to enter a line below current position and return to normal mode
 nmap <C-I> o<Esc>
+
+"Moving around in insert mode
+inoremap <C-k> <C-o>gk
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <C-o>gj
+
+"Not having to hit Esc
+inoremap jk 
+inoremap kj 
+
