@@ -15,11 +15,22 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'PeterRincker/vim-argumentative'
+Plugin 'chrisbra/csv.vim'
+" R Plugins
+Plugin 'jalvesaq/Nvim-R'
+" Search and Help Plugin
+Plugin 'rizzatti/dash.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+"let mapleader = ','
+"runtime! plugin/NERD_commenter.vim
+"let mapleader = '\'
+"runtime! plugin/r_nvimr.vim
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -81,7 +92,7 @@ set splitbelow
 autocmd Filetype python setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
 " Setting F3 to toggle comments using Nerd Commentor
-map <F3> \c<space>
+map <F3> <leader><space>
 
 " Disable arrow keys in vim to force habit of using hjkl; Arrow keys should
 " ideally be remapped to something later.
@@ -115,4 +126,13 @@ inoremap <C-j> <C-o>gj
 "Not having to hit Esc
 inoremap jk 
 inoremap kj 
+
+"nvim-r do not use _ to produce ->
+let R_assign = 0
+
+"because backspace does not work
+set backspace=indent,eol,start
+
+"backspace in normal mode should delete
+nnoremap <BS> X
 
