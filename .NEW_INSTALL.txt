@@ -21,10 +21,13 @@ Packages:
 14. Get Compiz. Add compiz --replace to startup applications. Go to CCSM from dashboard and enable the put extension. Set shortcut to move windows between monitors.
 15. Setup Chrome and Firefox to be fullscreen (both provide this option in their settings).
 16. Use Compiz to dim non active windows with a shortcut-- https://askubuntu.com/questions/828557/highlight-window-with-focus-even-more
-17. Use Compiz to remove the title bar from windows when they are fullscreen -- https://askubuntu.com/questions/284956/dim-inactive-compiz-set-speed-of-the-effect
+17. Use Compiz to remove the title bar from windows when they are fullscreen -- https://planetkris.com/2009/07/how-to-remove-the-title-bar-with-compiz-without-losing-3-hours-of-your-life/
 18. Use Compiz to speed up window transitions with dimming of non active windows -- https://askubuntu.com/questions/284956/dim-inactive-compiz-set-speed-of-the-effect
 19. Use Compiz to allow using keyboard shortcuts to move windows between monitors -- Compiz -> window management -> Put
-20. Install Vundle -- 
+20. Install Vundle by cloning its git repo in the right place (see the git repo)
+21. Install "touchpad-indicator" to disable touchpad when using the keyboard.
+22. Remap caps lock to ctrl -- https://askubuntu.com/questions/33774/how-do-i-remap-the-caps-lock-and-ctrl-keys
+23. Setup shortcut for caps lock in keyboard shortcuts -- use command 'xdotool key Caps_Lock'
 
 Optional/System Specific:
 1. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
