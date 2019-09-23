@@ -28,7 +28,7 @@ Packages:
 21. Install "touchpad-indicator" to disable touchpad when using the keyboard.
 22. Remap caps lock to ctrl -- https://askubuntu.com/questions/33774/how-do-i-remap-the-caps-lock-and-ctrl-keys
 23. Setup shortcut for caps lock in keyboard shortcuts -- use command 'xdotool key Caps_Lock'
-24. Install sdcv (offline dictionary on the command line) - https://askubuntu.com/questions/191125/is-there-an-offline-command-line-dictionary
+24. Install dictd (offline dictionary on the command line) - https://askubuntu.com/questions/191125/is-there-an-offline-command-line-dictionary
 
 Optional/System Specific:
 1. Setup disk drives to be mapped to specific folders. https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup is a good example.
