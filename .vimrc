@@ -18,6 +18,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'PeterRincker/vim-argumentative'
 Plugin 'chrisbra/csv.vim'
 Plugin 'AndrewRadev/switch.vim'
+Plugin 'kien/ctrlp.vim'
 " R Plugins
 Plugin 'jalvesaq/Nvim-R'
 " Search and Help Plugin
