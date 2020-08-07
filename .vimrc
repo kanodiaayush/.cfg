@@ -11,12 +11,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'PeterRincker/vim-argumentative'
 Plugin 'chrisbra/csv.vim'
+Plugin 'lervag/vimtex'
+Plugin 'tmhedberg/SimpylFold'
 " R Plugins
 Plugin 'jalvesaq/Nvim-R'
 " Search and Help Plugin
@@ -88,11 +90,8 @@ set splitbelow
 " Vertical line after 80 characters
 "set colorcolumn=+1
 
-" Use space for tabs
-autocmd Filetype python setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
-
 " Setting F3 to toggle comments using Nerd Commentor
-map <F3> <leader><space>
+map <F3> <leader>c<space>
 
 " Disable arrow keys in vim to force habit of using hjkl; Arrow keys should
 " ideally be remapped to something later.
@@ -135,4 +134,25 @@ set backspace=indent,eol,start
 
 "backspace in normal mode should delete
 nnoremap <BS> X
+
+"Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with spacebar
+nnoremap <space> za
+
+"au BufNewFile,BufRead *.py
+    "\ set tabstop=4
+    "\ set softtabstop=4
+    "\ set shiftwidth=4
+    "\ set textwidth=79
+    "\ set expandtab
+    "\ set autoindent
+    "\ set fileformat=unix
+
+"au BufNewFile,BufRead *.js, *.html, *.css
+    "\ set tabstop=2
+    "\ set softtabstop=2
+    "\ set shiftwidth=2
 
