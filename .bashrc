@@ -125,14 +125,14 @@ alias tmux='tmux -2'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/users/akanodia/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/ubuntu/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/users/akanodia/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/users/akanodia/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/ubuntu/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/ubuntu/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/users/akanodia/miniconda3/bin:$PATH"
+        export PATH="/home/ubuntu/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -140,3 +140,7 @@ unset __conda_setup
 
 # Set DISPLAY variable to work with tmux
 export DISPLAY="`tmux show-env | sed -n 's/^DISPLAY=//p'`"
+export PATH=/home/ubuntu/miniconda/bin:/home/ubuntu/.local/bin:/home/users/akanodia/miniconda3/bin:/home/users/akanodia/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+# Enable vim mode for command editing in bash
+set -o vi
